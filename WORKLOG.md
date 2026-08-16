@@ -152,6 +152,27 @@ Details: Updated moveCalibrationPoint in studyStore.ts to support reviewing and 
 Details: Authored unit tests in src/store/studyStore.test.ts for calibration drag and scale updates. 323/323 unit tests passed (100%). Build & lint clean.
 ---
 
+---
+2026-08-17 01:35 | git_bot | RELEASE_COMMITTED | mandibular-asymmetry
+Details: Committed (9d8de93) and pushed Calibration Points Drag-to-Adjust Functionality to remote origin/master.
+---
+
+---
+2026-08-17 01:35 | pm_bot | TASK_STARTED | mandibular-asymmetry/ai-vertical-bounds
+Details: Started Fix AI Landmark Vertical Misalignment & Improve ROI Cropping Threshold.
+---
+
+---
+2026-08-17 01:36 | dev_bot | FEATURE_IMPLEMENTED | mandibular-asymmetry/ai-vertical-bounds
+Details: Enhanced detectRadiographRoi with adaptive luminance variance, fallback central Y clamp [0.08, 0.90], and strict anatomical bounds in detectMandibularLandmarks (CoR/CoL Y ∈ [0.18, 0.28], GoR/GoL Y ∈ [0.60, 0.72], Me Y ∈ [0.80, 0.88] with Me.y <= 0.88).
+---
+
+---
+2026-08-17 01:36 | qa_bot | TESTS_COMPLETED | mandibular-asymmetry/ai-vertical-bounds
+Details: Updated src/test/aiDetection.test.ts testing gray letterboxes, fallback bounds, and coordinate boundaries. 324/324 unit tests passed (100%). Build & lint clean.
+---
+
+
 
 
 
