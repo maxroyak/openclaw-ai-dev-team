@@ -112,5 +112,26 @@ Details: Implemented detectRadiographRoi in src/domain/ai/landmarkDetector.ts, u
 Details: Updated src/test/aiDetection.test.ts with letterbox margin detection and DICOM bypass tests. 320/320 unit tests passed (100%). Build & lint clean.
 ---
 
+---
+2026-08-17 01:29 | git_bot | RELEASE_COMMITTED | mandibular-asymmetry
+Details: Committed (2557170) and pushed AI Landmark Detection Accuracy & ROI Cropping Fix to remote origin/master.
+---
+
+---
+2026-08-17 01:30 | pm_bot | TASK_STARTED | mandibular-asymmetry/ui-header-refactor
+Details: Started UI Refactoring: Relocate "Save Study" and "New Study" Actions to Top Header.
+---
+
+---
+2026-08-17 01:31 | dev_bot | FEATURE_IMPLEMENTED | mandibular-asymmetry/ui-header-refactor
+Details: Relocated Save Study (with unsaved changes pulse indicator) and New Study buttons to top header toolbar in AnalysisPage.tsx next to the title. Streamlined StudyManager.tsx.
+---
+
+---
+2026-08-17 01:31 | qa_bot | TESTS_COMPLETED | mandibular-asymmetry/ui-header-refactor
+Details: Verified header action wiring, discard confirmation guard, and i18n support in EN and RU. 320/320 unit tests passed (100%). Build & lint clean.
+---
+
+
 
 
