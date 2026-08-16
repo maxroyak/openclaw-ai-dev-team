@@ -132,6 +132,27 @@ Details: Relocated Save Study (with unsaved changes pulse indicator) and New Stu
 Details: Verified header action wiring, discard confirmation guard, and i18n support in EN and RU. 320/320 unit tests passed (100%). Build & lint clean.
 ---
 
+---
+2026-08-17 01:31 | git_bot | RELEASE_COMMITTED | mandibular-asymmetry
+Details: Committed (2dc10ef) and pushed UI Header Refactoring to remote origin/master.
+---
+
+---
+2026-08-17 01:33 | pm_bot | TASK_STARTED | mandibular-asymmetry/calibration-drag
+Details: Started Calibration Points Drag-to-Adjust Functionality. Designed real-time calibration point dragging and coordinate clamping.
+---
+
+---
+2026-08-17 01:34 | dev_bot | FEATURE_IMPLEMENTED | mandibular-asymmetry/calibration-drag
+Details: Updated moveCalibrationPoint in studyStore.ts to support reviewing and calibrated stages with [0.0, 1.0] clamping and live scale updates. Updated ImageViewer.tsx hit-testing and cursor styling.
+---
+
+---
+2026-08-17 01:34 | qa_bot | TESTS_COMPLETED | mandibular-asymmetry/calibration-drag
+Details: Authored unit tests in src/store/studyStore.test.ts for calibration drag and scale updates. 323/323 unit tests passed (100%). Build & lint clean.
+---
+
+
 
 
 
