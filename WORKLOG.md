@@ -56,3 +56,19 @@ Details: Created src/test/reportExport.test.ts. Verified data payload integrity 
 2026-08-17 01:05 | git_bot | RELEASE_COMMITTED | mandibular-asymmetry
 Details: Committed (d01d472) and pushed Clinical PDF / Print export feature to remote origin/master.
 ---
+
+---
+2026-08-17 01:13 | pm_bot | TASK_STARTED | mandibular-asymmetry/track-2-dicom
+Details: Started Track 2: Native DICOM (.dcm) Radiograph Support & Auto-Scale. Extracted DICOM tags, VOI windowing, MONOCHROME1/2, Pixel Spacing auto-calibration.
+---
+
+---
+2026-08-17 01:14 | dev_bot | FEATURE_IMPLEMENTED | mandibular-asymmetry/track-2-dicom
+Details: Integrated dicom-parser (with src/types/dicom-parser.d.ts), built src/domain/dicom/dicomReader.ts and src/domain/dicom/types.ts, updated createStudy in studyStore.ts, and added .dcm drag-and-drop to ImageUploadZone.tsx.
+---
+
+---
+2026-08-17 01:15 | qa_bot | TESTS_COMPLETED | mandibular-asymmetry/track-2-dicom
+Details: Created src/test/dicomParser.test.ts with synthetic DICOM dataset tests and auto-calibration checks. 310/310 unit tests passing (100%). TypeScript and ESLint clean.
+---
+
