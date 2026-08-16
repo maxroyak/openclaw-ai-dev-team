@@ -1,96 +1,46 @@
-# AI Development Team (Go + Python)
+# OpenClaw AI Development & Clinical Engineering Team
 
-This workspace contains a specialized AI-assisted development team focused on Go and Python projects, featuring cloud-based model utilization for development tasks.
+This workspace houses a multi-agent AI engineering team specialized in Full-Stack Web (React/TypeScript), Backend Systems (Go + Python), and Clinical/Medical Imaging Domain Engineering.
 
-## Team Members
+---
 
-### 📋 Project Manager (pm_bot)
-- **Role**: Orchestrator and coordinator
-- **Model**: xiaomi/mimo-v2-flash (flexible for planning and coordination)
-- **Responsibilities**: Task decomposition, delegation, progress tracking, reporting
-- **Focus**: Ensuring smooth workflow between team members
+## Team Roster
 
-### 💻 Lead Golang Developer (dev_bot)
-- **Role**: Primary implementation engineer
-- **Model**: **openrouter/kwaipilot/kat-coder-pro-v2** ✅ **CONFIGURED**
-- **Specialization**: Golang backend development, APIs, concurrency, advanced reasoning
-- **Focus**: Writing clean, idiomatic, well-tested Go code using kwaipilot/kat-coder-pro-v2
-- **Advantage**: Cloud-based advanced AI with strong coding capabilities, no local GPU required
+### 📋 Project Management & Orchestration
+* **`pm_bot` (Paula)** — Team orchestrator, work decomposition, dependency tracking, and release coordinator.
 
-### 🔍 Quality Gatekeeper & Bug Hunter (qa_bot)
-- **Role**: Code auditor and quality assurance
-- **Model**: **openrouter/kwaipilot/kat-coder-pro-v2** ✅ **CONFIGURED**
-- **Specialization**: Security, correctness, best practices
-- **Focus**: Finding bugs, ensuring quality, maintaining standards
+---
 
-### 🌿 GitHub Operations (git_bot)
-- **Role**: Git automation and repository management
-- **Model**: **openrouter/kwaipilot/kat-coder-pro-v2** ✅ **CONFIGURED**
-- **Specialization**: Commits, PRs, CI/CD pipeline monitoring, branch management, repo ops
-- **Focus**: Converting approved work into clean commits and PRs; watching for pipeline failures
-- **When**: Acts after qa_bot approves a feature or fix
-- **Authority**: **Only git_bot may run `git commit` or `git push`**
+### 🔬 Domain Experts (`domain_experts/`)
+* **`domain_experts/research_bot`** — Scientific evidence reviewer, literature validation, and evidence dossier author (`docs/clinical-evidence.md`).
+* **`domain_experts/ortho_bot`** — Orthodontic clinical expert, anatomical landmark definitions, measurement protocols, clinical summaries, and threshold policies.
+* **`domain_experts/vision_bot`** — Computer vision and medical imaging AI specialist (landmark detection architectures, image quality & distortion checks, Phase 2+).
 
-### 🐍 Python Developer (py_bot)
-- **Role**: Lead developer for the Amnezia Web Panel (Python/FastAPI)
-- **Model**: **openrouter/kwaipilot/kat-coder-pro-v2** ✅ **CONFIGURED**
-- **Specialization**: FastAPI routes, SSH/paramiko, Docker, VPN protocol managers, Telegram bot
-- **Focus**: Implementing features, fixing bugs, maintaining the VPN management panel
-- **Project**: `/home/igor/Amnezia-Web-Panel/`
+---
 
-## Workflow
+### 💻 Engineering & Interface Design
+* **`ux_bot`** — Clinical interface designer, 30–60 second workflow ergonomics, radiograph viewers, and visual overlays.
+* **`dev_bot`** — Lead full-stack developer (React 19 + TypeScript, Canvas/SVG overlays, Zustand stores, and Golang backend services).
+* **`py_bot`** — Lead Python developer (FastAPI, Docker, automation, and backend services).
 
-1. **Planning** - PM breaks down requests into actionable tasks
-2. **Development** - **Dev implements features using kwaipilot/kat-coder-pro-v2** following Go standards
-3. **Review** - QA audits for quality, security, and correctness
-4. **QA Approval** - Dev work is validated
-5. **Commit & PR** - **git_bot creates a clean commit and PR** after QA sign-off
-6. **Completion** - PM confirms "done-done" work
+---
 
-## Cloud Model Advantages for Development
+### 🛡️ Quality Assurance & Operations
+* **`qa_bot`** — Quality gatekeeper & test suite architect (author of unit/integration test suites and independent multi-dimensional verification gate).
+* **`git_bot`** — GitHub operations, branch management, CI/CD pipeline monitoring, and clean Conventional Commits (sole agent authorized to commit/push).
 
-The dev_bot's utilization of kwaipilot/kat-coder-pro-v2 via OpenRouter provides:
+---
 
-### ⚡ **Performance Benefits**
-- Advanced reasoning capabilities for complex code
-- No local GPU requirements
-- Scalable compute resources on demand
-- Reliable availability through cloud infrastructure
+## Standard Workflow
 
-### 💰 **Cost Efficiency**
-- Pay-per-use pricing (no idle resource costs)
-- No hardware investment required
-- Access to state-of-the-art models without maintenance
-
-### 🎯 **Advanced Capabilities**
-- Strong code generation and understanding
-- Excellent handling of Go idioms and patterns
-- Large context window for complex codebases
-- Continuous model improvements from provider
-
-### 🔧 **Ease of Use**
-- No local installation or configuration
-- Automatic updates and improvements
-- Simple API integration through OpenRouter
-- Consistent performance across environments
-
-## Getting Started
-
-The team follows these principles:
-- Clear communication through defined channels
-- Golang best practices and idioms (enforced by kwaipilot/kat-coder-pro-v2 + qa_bot)
-- Security-first mindset
-- Comprehensive testing
-- Continuous improvement
-
-## Model Verification
-
-To confirm the model is properly configured:
-```bash
-# Check OpenClaw config has the model registered
-cat ~/.openclaw/openclaw.json | grep -A2 "kwaipilot/kat-coder-pro-v2"
-# Should show the model in the openrouter provider models list
+```
+User Request → pm_bot
+  ├── Stage 1: research_bot (scientific literature review)
+  ├── Stage 2: ortho_bot (clinical protocol & landmark definitions)
+  ├── Stage 3: ux_bot (interface layout & overlay design)
+  ├── Stage 4: dev_bot / py_bot (implementation with domain isolation)
+  ├── Stage 5: qa_bot (test suite creation & independent QA verification)
+  └── Stage 6: git_bot (git commit, PR, and release upon QA approval)
 ```
 
-Check the individual agent folders (pm_bot/, dev_bot/, qa_bot/, py_bot/) for specific roles, responsibilities, and model configurations.
-Shared configurations are in the shared/ directory.
+For full details, see [`shared/WORKFLOW.md`](shared/WORKFLOW.md) and individual agent directories.

@@ -1,40 +1,80 @@
 # AI Development Team Workflow
 
-## Process Overview
-1. **Planning** - PM receives request and breaks into tasks
-2. **Development** - Dev implements features in Golang
-3. **Review** - QA audits code for quality, security, and correctness
-4. **Iteration** - Feedback loop until QA approves
-5. **Completion** - PM confirms "done-done" and reports to human
+## 1. Process Overview & Orchestration Model
 
-## Communication Channels
-- **Task Assignment**: PM → Dev (specific implementation tasks)
-- **Review Request**: PM → QA (code to review)
-- **Feedback**: QA → PM (review comments and approval status)
-- **Status Updates**: PM → Human (progress and completion reports)
+The team operates under a strict **Hub-and-Spoke** orchestration model where all user requests enter through `pm_bot`.
 
-## Definition of Done
-A task is considered "done-done" when:
-1. Code is implemented by dev_bot
-2. Code passes review by qa_bot (no critical issues)
-3. **All three security tools pass clean** (golangci-lint, gosec, govulncheck) — mandatory, no exceptions
-4. All tests pass
-5. Code follows Go best practices
-6. **WORKLOG.md appended** with all significant actions (task started, decisions, completions, handoffs)
-7. PM has verified completion and reported to human
+```
+User → pm_bot → Domain Specialists → pm_bot → dev_bot/py_bot → pm_bot → qa_bot → pm_bot → git_bot → pm_bot → Done
+```
 
-## WORKLOG.md — Mandatory
-**Every project must have a WORKLOG.md file.** It is append-only and lives at the project root.
+*No specialist directly invokes another specialist. All deliverables return to `pm_bot`.*
 
-- pm_bot creates it when initializing a project
-- dev_bot appends when starting/completing tasks
-- qa_bot appends when starting/completing reviews
+---
+
+## 2. Multi-Stage Execution Lifecycle
+
+### Stage 1 — Scientific Evidence (`research_bot`)
+- Reviews literature, primary citations, and validates calculation formulas.
+- Authors or updates `docs/clinical-evidence.md`.
+
+### Stage 2 — Clinical Protocol (`ortho_bot`)
+- Formulates anatomical landmark definitions, measurement protocols, and safe wording templates.
+- Approves or rejects proposed mathematical metrics and threshold policies.
+
+### Stage 3 — UX & Interaction Design (`ux_bot`)
+- Creates 30–60 second clinical workflows, interactive overlay behaviors, and layout specifications.
+
+### Stage 4 — Implementation (`dev_bot` / `py_bot`)
+- Implements backend (Go/Python) and frontend (React 19/TS) following strict domain layer isolation.
+- Domain logic must be pure functions with zero UI dependencies.
+
+### Stage 5 — Test Suite Authoring & QA Gate (`qa_bot`)
+- Creates comprehensive unit and integration test suites covering geometry, boundary cases, and state transitions.
+- Executes independent quality verification (code audit, scanners, security checks).
+
+### Stage 6 — Git Operations (`git_bot`)
+- Sole authorized agent for `git commit`, `git push`, branch management, and PR authoring upon QA approval.
+
+---
+
+## 3. Clinical Formula Change Protocol
+
+```
+research_bot (evidence) → ortho_bot (clinical sign-off) → pm_bot → qa_bot (test verification) → git_bot
+```
+*Core clinical formulas, threshold logic, and interpretation rules cannot be modified without scientific evidence and orthodontic sign-off.*
+
+---
+
+## 4. Definition of Done
+
+A task is considered **"done-done"** when:
+1. Feature/spec is fully implemented according to domain and UX designs.
+2. Architecture rules are preserved (domain purity, normalized coordinates, separate render layers).
+3. All static analysis and security tools pass clean:
+   - **Go:** `go fmt`, `go vet`, `golangci-lint`, `gosec`, `govulncheck`
+   - **Python:** `black`, `flake8`, `mypy`, `pytest --cov`, `pip-audit`
+   - **TypeScript/React:** `tsc --noEmit`, `eslint`, `vitest run`, `vite build`
+4. Automated test suite passes 100% with no regressions.
+5. `qa_bot` issues `PASS` or `PASS_WITH_NOTES`.
+6. `git_bot` creates clean Conventional Commits.
+7. `WORKLOG.md` is appended with the timestamped action.
+8. `pm_bot` confirms completion to the user.
+
+---
+
+## 5. QA Result Codes
+
+- **PASS:** All criteria met, all tests green, all scanners clean.
+- **PASS_WITH_NOTES:** Acceptable; minor non-blocking observations.
+- **FAIL:** Criteria unmet, bugs found, or scanner failures; returned to dev.
+- **BLOCKED:** Ambiguous specs or external environment blockers; escalated to `pm_bot`.
+
+---
+
+## 6. WORKLOG.md Convention
+
+Every project must maintain an append-only `WORKLOG.md` at its root:
 - Format: `YYYY-MM-DD HH:MM | AGENT | ACTION | DESCRIPTION`
-- **No WORKLOG entry = work not done** (enforced as part of Definition of Done)
-
-This ensures continuity after context window compaction — any agent (or new session) can read WORKLOG.md and immediately understand the full project history.
-
-## Escalation Path
-- If dev_bot and qa_bot disagree on implementation, PM mediates
-- If human needs clarification, PM interfaces directly
-- Blocking issues are highlighted immediately by QA
+- **No WORKLOG entry = work not done.**

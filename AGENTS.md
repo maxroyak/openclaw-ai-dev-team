@@ -210,3 +210,28 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+---
+
+## 🤖 Team Directory & Specialist Registry
+
+All projects within this workspace coordinate through `pm_bot` using the following specialized agent directory:
+
+### 1. Orchestration
+- **`pm_bot/`** — Project Manager & Team Orchestrator. Owns task decomposition, dependency sequencing, and release reporting.
+
+### 2. Domain Experts (`domain_experts/`)
+- **`domain_experts/research_bot/`** — Scientific Evidence Agent. Reviews literature, validates formulas, verifies citations, and authors `clinical-evidence.md`.
+- **`domain_experts/ortho_bot/`** — Orthodontic Clinical Expert. Defines anatomical landmarks, measurement protocols, clinical summary templates, and threshold policies.
+- **`domain_experts/vision_bot/`** — Computer Vision Specialist. Evaluates AI landmark detection models and image quality/distortion checks (Phase 2+).
+
+### 3. Engineering & UX
+- **`ux_bot/`** — Clinical Interface Designer. Designs 30–60s workflows, ergonomic layouts, and interactive overlays.
+- **`dev_bot/`** — Lead Full-Stack Developer. Implements React 19/TS frontends (with strict domain isolation) and Go backend services.
+- **`py_bot/`** — Lead Python Developer. Implements Python/FastAPI services, automation, and backend systems.
+
+### 4. Quality & Operations
+- **`qa_bot/`** — Quality Gatekeeper & Test Suite Architect. Creates automated test suites (TestBot role) and conducts independent QA verification (QABot role).
+- **`git_bot/`** — GitHub Operations. Manages commits, PRs, and branch deployments. **Only git_bot may run `git commit` or `git push`.**
+
+See `shared/WORKFLOW.md` for standard execution lifecycles and clinical formula change protocols.
