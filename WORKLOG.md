@@ -72,3 +72,24 @@ Details: Integrated dicom-parser (with src/types/dicom-parser.d.ts), built src/d
 Details: Created src/test/dicomParser.test.ts with synthetic DICOM dataset tests and auto-calibration checks. 310/310 unit tests passing (100%). TypeScript and ESLint clean.
 ---
 
+---
+2026-08-17 01:16 | git_bot | RELEASE_COMMITTED | mandibular-asymmetry
+Details: Committed (451d114) and pushed Native DICOM (.dcm) Radiograph Support & Auto-Scale to remote origin/master.
+---
+
+---
+2026-08-17 01:20 | pm_bot | TASK_STARTED | mandibular-asymmetry/track-3-ai-detection
+Details: Started Track 3: AI-Assisted Landmark Detection via Manual Trigger Button (Phase 2). Designed candidate proposal pipeline, explicit manual trigger, and clinician-in-the-loop review.
+---
+
+---
+2026-08-17 01:21 | dev_bot | FEATURE_IMPLEMENTED | mandibular-asymmetry/track-3-ai-detection
+Details: Built src/domain/ai/landmarkDetector.ts and types.ts. Added manual trigger buttons in LandmarkPalette.tsx and ImageViewer.tsx toolbar. Implemented aiCandidateLandmarks review flow (accept all / clear / drag to verify). Added AI translations in EN/RU.
+---
+
+---
+2026-08-17 01:22 | qa_bot | TESTS_COMPLETED | mandibular-asymmetry/track-3-ai-detection
+Details: Created src/test/aiDetection.test.ts. Verified manual trigger requirement, candidate lifecycle, and coordinate ranges. 318/318 unit tests passed (100%). Build & lint clean.
+---
+
+
