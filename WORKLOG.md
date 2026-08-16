@@ -92,4 +92,25 @@ Details: Built src/domain/ai/landmarkDetector.ts and types.ts. Added manual trig
 Details: Created src/test/aiDetection.test.ts. Verified manual trigger requirement, candidate lifecycle, and coordinate ranges. 318/318 unit tests passed (100%). Build & lint clean.
 ---
 
+---
+2026-08-17 01:23 | git_bot | RELEASE_COMMITTED | mandibular-asymmetry
+Details: Committed (36f17fb) and pushed Track 3 AI-Assisted Landmark Detection to remote origin/master.
+---
+
+---
+2026-08-17 01:28 | pm_bot | TASK_STARTED | mandibular-asymmetry/ai-roi-accuracy
+Details: Started AI Landmark Detection Accuracy & ROI Cropping Fix. Designed letterbox padding filter and refined proportional zones.
+---
+
+---
+2026-08-17 01:29 | dev_bot | FEATURE_IMPLEMENTED | mandibular-asymmetry/ai-roi-accuracy
+Details: Implemented detectRadiographRoi in src/domain/ai/landmarkDetector.ts, updated detectMandibularLandmarks with refined zones, and connected canvas pixel extractor in studyStore.ts.
+---
+
+---
+2026-08-17 01:29 | qa_bot | TESTS_COMPLETED | mandibular-asymmetry/ai-roi-accuracy
+Details: Updated src/test/aiDetection.test.ts with letterbox margin detection and DICOM bypass tests. 320/320 unit tests passed (100%). Build & lint clean.
+---
+
+
 
