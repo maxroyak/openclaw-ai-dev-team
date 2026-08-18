@@ -172,6 +172,26 @@ Details: Enhanced detectRadiographRoi with adaptive luminance variance, fallback
 Details: Updated src/test/aiDetection.test.ts testing gray letterboxes, fallback bounds, and coordinate boundaries. 324/324 unit tests passed (100%). Build & lint clean.
 ---
 
+---
+2026-08-18 01:40 | pm_bot | TASK_STARTED | mandibular-asymmetry/phase2-finalization
+Details: Started Phase 2 Finalization: DICOM Auto-Scale, Precision Micro-Markers, Bulk Clear & CBCT Hint.
+---
+
+---
+2026-08-18 01:50 | dev_bot | FEATURE_IMPLEMENTED | mandibular-asymmetry/phase2-finalization
+Details: Implemented DICOM auto-calibration scale tags (0028,0030 & 0018,1164) with auto-scale badges in RU/EN, added subtle 1px center hair-crosses with 3-4px micro-markers in RadiographOverlay.tsx, added CBCT 2D export micro-instruction link and 2-step modal in ImageUploadZone.tsx, and verified bulk study deletion in StudyManager.tsx.
+---
+
+---
+2026-08-18 01:55 | qa_bot | TESTS_COMPLETED | mandibular-asymmetry/phase2-finalization
+Details: Created src/test/phase2Enhancements.test.tsx. Verified 342/342 unit tests passing (100% across 11 test suites), TypeScript typecheck clean, and production build PASS.
+---
+
+---
+2026-08-18 02:00 | git_bot | RELEASE_COMMITTED | mandibular-asymmetry
+Details: Committed (31ef52f) and pushed feat(phase2): finalize dicom autoscale precision markers and study management to remote origin/master.
+---
+
 
 
 
