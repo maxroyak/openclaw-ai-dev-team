@@ -209,8 +209,29 @@ Details: Authored unit test in src/test/phase2Enhancements.test.tsx. Verified 34
 
 ---
 2026-08-18 02:25 | git_bot | RELEASE_COMMITTED | mandibular-asymmetry
-Details: Committed and pushed fix(ui): hide cursor during landmark drag for precise anatomical alignment to remote origin/master.
+Details: Committed (959a698) and pushed fix(ui): hide cursor during landmark drag for precise anatomical alignment to remote origin/master.
 ---
+
+---
+2026-08-18 02:34 | pm_bot | TASK_STARTED | mandibular-asymmetry/topbar-refactor
+Details: Started UX/UI Refactor: Clarify Topbar Controls (Reset View & AI Landmark Detection).
+---
+
+---
+2026-08-18 02:35 | dev_bot | FEATURE_IMPLEMENTED | mandibular-asymmetry/topbar-refactor
+Details: Renamed Reset View with explicit tooltip and zoom grouping, renamed AI Landmark Detection (wand icon) with tooltip, and implemented safety confirmation dialog for landmark overwrite in ImageViewer.tsx and LandmarkPalette.tsx.
+---
+
+---
+2026-08-18 02:36 | qa_bot | TESTS_COMPLETED | mandibular-asymmetry/topbar-refactor
+Details: Authored unit tests in src/test/phase2Enhancements.test.tsx. Verified 346/346 unit tests passing (100%), TypeScript typecheck clean, and production build PASS.
+---
+
+---
+2026-08-18 02:37 | git_bot | RELEASE_COMMITTED | mandibular-asymmetry
+Details: Committed and pushed refactor(ui): clarify reset view and ai landmark detection workflow to remote origin/master.
+---
+
 
 
 
