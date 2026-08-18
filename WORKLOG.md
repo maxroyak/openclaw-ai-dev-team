@@ -192,6 +192,27 @@ Details: Created src/test/phase2Enhancements.test.tsx. Verified 342/342 unit tes
 Details: Committed (31ef52f) and pushed feat(phase2): finalize dicom autoscale precision markers and study management to remote origin/master.
 ---
 
+---
+2026-08-18 02:22 | pm_bot | TASK_STARTED | mandibular-asymmetry/drag-cursor-hidden
+Details: Started Hide / Optimize Cursor During Landmark Dragging for Precision View.
+---
+
+---
+2026-08-18 02:23 | dev_bot | FEATURE_IMPLEMENTED | mandibular-asymmetry/drag-cursor-hidden
+Details: Updated RadiographOverlay.tsx and ImageViewer.tsx to set cursor: none on svg, marker hit-targets, and frame container during active dragging (isDraggingMarker === true). Retained cursor: grab on hover.
+---
+
+---
+2026-08-18 02:24 | qa_bot | TESTS_COMPLETED | mandibular-asymmetry/drag-cursor-hidden
+Details: Authored unit test in src/test/phase2Enhancements.test.tsx. Verified 343/343 unit tests passing (100%), TypeScript typecheck clean, and production build PASS.
+---
+
+---
+2026-08-18 02:25 | git_bot | RELEASE_COMMITTED | mandibular-asymmetry
+Details: Committed and pushed fix(ui): hide cursor during landmark drag for precise anatomical alignment to remote origin/master.
+---
+
+
 
 
 
