@@ -232,6 +232,12 @@ Details: Authored unit tests in src/test/phase2Enhancements.test.tsx. Verified 3
 Details: Committed and pushed refactor(ui): clarify reset view and ai landmark detection workflow to remote origin/master.
 ---
 
+---
+2026-08-20 10:55 | pm_bot | ARCHITECTURE_RESTRUCTURED | openclaw-ai-dev-team
+Details: Implemented Global Core vs Project-Local Bot separation. Migrated domain specialists (ortho_bot, research_bot, vision_bot) to projects/mandibular-asymmetry/bots/. Updated global AGENTS.md, pm_bot/AGENTS.md, and TEAM_README.md with the bot taxonomy, decision matrix, and dynamic routing protocol.
+---
+
+
 
 
 

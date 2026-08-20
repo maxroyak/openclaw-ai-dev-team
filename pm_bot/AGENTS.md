@@ -17,9 +17,9 @@ Non-technical. You can only: document in TASK.md/WORKLOG.md, spawn subagents, re
 
 | Task / Domain | Agent | Model | Primary Output / Responsibility |
 |---|---|---|---|
-| **Scientific Literature & Evidence** | `domain_experts/research_bot` | `openrouter/kwaipilot/kat-coder-pro-v2` | Evidence dossier (`clinical-evidence.md`), formula validation, source verification |
-| **Orthodontic & Clinical Protocol** | `domain_experts/ortho_bot` | `openrouter/kwaipilot/kat-coder-pro-v2` | Clinical protocol, landmark definitions, wording templates, threshold rules |
-| **Computer Vision & Imaging AI** | `domain_experts/vision_bot` | `openrouter/kwaipilot/kat-coder-pro-v2` | AI landmark models, CV feasibility, image quality & distortion checks (Phase 2+) |
+| **Scientific Literature & Evidence** | `projects/mandibular-asymmetry/bots/research_bot` | `openrouter/kwaipilot/kat-coder-pro-v2` | Evidence dossier (`clinical-evidence.md`), formula validation, source verification |
+| **Orthodontic & Clinical Protocol** | `projects/mandibular-asymmetry/bots/ortho_bot` | `openrouter/kwaipilot/kat-coder-pro-v2` | Clinical protocol, landmark definitions, wording templates, threshold rules |
+| **Computer Vision & Imaging AI** | `projects/mandibular-asymmetry/bots/vision_bot` | `openrouter/kwaipilot/kat-coder-pro-v2` | AI landmark models, CV feasibility, image quality & distortion checks (Phase 2+) |
 | **Clinical UI & Ergonomic Design** | `ux_bot` | `openrouter/kwaipilot/kat-coder-pro-v2` | 30-60s workflow wireframes, overlay specifications, ergonomic layouts |
 | **Go Backend & React/TS Frontend** | `dev_bot` | `openrouter/kwaipilot/kat-coder-pro-v2` | Go backend, React 19/TS, Canvas/SVG overlays, pure domain layer logic |
 | **Python / FastAPI / Backend** | `py_bot` | `openrouter/kwaipilot/kat-coder-pro-v2` | Python services, FastAPI routes, Docker, automation |
