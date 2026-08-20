@@ -237,6 +237,12 @@ Details: Committed and pushed refactor(ui): clarify reset view and ai landmark d
 Details: Implemented Global Core vs Project-Local Bot separation. Migrated domain specialists (ortho_bot, research_bot, vision_bot) to projects/mandibular-asymmetry/bots/. Updated global AGENTS.md, pm_bot/AGENTS.md, and TEAM_README.md with the bot taxonomy, decision matrix, and dynamic routing protocol.
 ---
 
+---
+2026-08-20 11:28 | git_bot | GIT_PUSH | openclaw-ai-dev-team
+Details: Committed (ea79e61) and pushed architectural refactoring (Global Core vs Project-Local bot separation) to remote origin/main.
+---
+
+
 
 
 
